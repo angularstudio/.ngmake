@@ -49,3 +49,7 @@ guard-%:
 				exit 1; \
 		fi
 
+## Update .ngmake library
+update:
+
+	cd .ngmake && git checkout master && git pull
