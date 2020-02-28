@@ -15,7 +15,7 @@ git/commit-and-push:
 git/pull: guard-BRANCH
 
 	@git submodule update --init
-	@for F in $(PROJECTS); do cd $(PWD)/services/$$F && git checkout $(BRANCH) && git pull; done
+	@for F in $(PROJECTS); do cd $(PWD)/projects/$$F && git checkout $(BRANCH) && git pull; done
 
 ### Update (pull) all modules from git. (make git/update BRANCH=somename)
 git/update: guard-BRANCH
