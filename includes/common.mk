@@ -48,8 +48,3 @@ guard-%:
 				echo "Environment variable $* not set (make $*=.. target or export $*=.."; \
 				exit 1; \
 		fi
-
-## Update .ngmake library
-update:
-
-	cd .ngmake && git checkout master && git pull
